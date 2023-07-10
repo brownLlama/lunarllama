@@ -6,31 +6,18 @@ Here I'm presenting you how to install lunarLlama in GCP Ubuntu instance.
 
 ## Step 1
 
-First create .config/lvim directory and inside the directory clone the git repo.
-
-```bash
-mkdir .config && cd .config
-```
-
-```bash
-mkdir lvim && cd lvim
-
-```
+First clone this git repo.
 
 ```bash
 git clone https://github.com/brownLlama/lunarllama.git
 
 ```
 
-```bash
-cd
-
-```
-
-Then run prep.sh by following command:
+and now run the following script to install `zsh` and `oh-my-zsh`
 
 ```bash
-.config/lvim/lunarllama/prep.sh
+lunarllama/./prep.sh
+
 ```
 
 Once the the script is completed, then quit the VM and ssh into it back.
@@ -40,7 +27,7 @@ Once the the script is completed, then quit the VM and ssh into it back.
 Now run another script, that install all the required dependencies for install NeoVim and LunarVim.
 
 ```bash
-.config/lvim/lunarllama/dependencies.sh
+.config/lvim/./dependencies.sh
 ```
 
 ## Step 3
