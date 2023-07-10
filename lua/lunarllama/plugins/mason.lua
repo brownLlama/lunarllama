@@ -44,7 +44,7 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"luacheck", -- lua diagonostic
-		-- "beautysh", --sh
+		"beautysh", --sh
 		"black", -- python
 		"pydocstyle", -- python
 		"isort", -- python

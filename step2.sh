@@ -14,3 +14,4 @@ brew install gcc gh make npm node neovim
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
+
