@@ -8,3 +8,9 @@ echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/sanu_maharjan/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Installing pre-requisits for Neovim
+brew install gcc gh make npm node neovim
+# Cargo (Rust)
+curl https://sh.rustup.rs -sSf | sh
+
