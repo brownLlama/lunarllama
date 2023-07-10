@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Insatlling autosuggestions and syntax highlight for zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -15,3 +17,10 @@ brew install gcc gh make npm node neovim
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
 
+# Updating necessary libraries
+npm install -g npm@9.8.0
+python3.11 -m pip install --upgrade pip
+
+echo "export PATH=/home/sanu_maharjan/.local/bin:$PATH" >> ~/.zshrc
+echo 'alias lvim="sudo -E env \"PATH=$PATH\" /home/sanu_maharjan/.local/bin/lvim"' >> ~/.zshrc
+. ~/.zshrc
