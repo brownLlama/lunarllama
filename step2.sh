@@ -16,6 +16,7 @@ brew install gcc gh make npm node neovim
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
+echo 'source "$HOME/.cargo/env"'
 
 # Updating necessary libraries
 npm install -g npm@9.8.0
