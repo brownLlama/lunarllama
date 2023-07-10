@@ -13,4 +13,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install gcc gh make npm node neovim
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
-
+source "$HOME/.cargo/env"
