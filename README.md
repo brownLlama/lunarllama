@@ -1,12 +1,15 @@
+<h1 align="center">Hi 👋, I'm brown Llama </h1>
+<h3 align="center">A passionate Analytics Engineer</h3>
+
 # lunarLlama
 
-lunarLlama is a modified version of LunarVim, created and maintained by the administrators of LunarVim. We would like to express our gratitude to the LunarVim team for their incredible work.
+lunarLlama is a personalized version of LunarVim. Please visit [here](https://www.lunarvim.org/) to get more detail on LunarVim. I would like to express my gratitude to the LunarVim admins and team for their incredible work.
 
-In this guide, we will walk you through the installation process of lunarLlama on a GCP Ubuntu instance.
+In this guide, I'll walk you through the installation process of lunarLlama on a GCP Ubuntu instance with a small pinch of my personal taste.
 
 ## Step 1: Cloning the Repository
 
-Begin by cloning the lunarLlama Git repository to your local machine.
+Create a GCP instance and begin by cloning the lunarLlama Git repository to the instance.
 
 ```bash
 git clone https://github.com/brownLlama/lunarllama.git
@@ -20,7 +23,7 @@ lunarllama/./prep.sh
 
 ```
 
-Once the script has finished running, exit the virtual machine and SSH back into it.
+Once the script has finished running, exit the instance and SSH back into it.
 
 ## Step 2: Installing Dependencies
 
@@ -40,6 +43,6 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 
 ## Update Instructions
 
-To update lunarLlama with the latest changes from the GitHub repository, simply clone the repository again. All the configuration files will be downloaded, and everything will be updated accordingly.
+To update lunarLlama with the latest changes from the GitHub repository, simply clone the repository again by going to `.config/lvim`. All the configuration files will be downloaded, and everything will be updated accordingly.
 
-Thank you for choosing lunarLlama! We hope you enjoy using it. If you encounter any issues or have any questions, please don't hesitate to reach out to us. Happy coding!
+Thank you for choosing lunarLlama! I hope you enjoy using it. If you encounter any issues or have any questions, please don't hesitate to reach out to us. Happy coding!
