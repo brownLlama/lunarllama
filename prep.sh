@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir .config && cd .config || exit
-mkdir lvim
+mkdir -p .config && cd .config || exit
+mkdir -p lvim
 cd || exit
 mv lunarllama/{.,}*(D) .config/lvim/
 rm -rf 1lunarllama
