@@ -12,7 +12,7 @@ echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Installing pre-requisits for Neovim
-brew install gcc gh make npm node neovim
+brew install gcc gh make npm node bat rm-improved neovim
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
@@ -24,4 +24,13 @@ python3.11 -m pip install --upgrade pip
 
 echo "export PATH=/home/sanu_maharjan/.local/bin:$PATH" >> ~/.zshrc
 echo 'alias lvim="sudo -E env \"PATH=$PATH\" /home/sanu_maharjan/.local/bin/lvim"' >> ~/.zshrc
+
+echo 'function take {
+   mkdir -p $1
+   cd $1
+}
+
+alias c=clear
+alias rm=rip' >> ~/.zshrc
+
 . ~/.zshrc
