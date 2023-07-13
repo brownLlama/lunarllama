@@ -1,1 +1,1 @@
-lvim.builtin.terminal.open_mapping = "<leader>t"
+lvim.builtin.terminal.open_mapping = "<leader>#"
