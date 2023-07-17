@@ -12,7 +12,7 @@ echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Installing pre-requisits for Neovim
-brew install gcc gh make npm node bat rm-improved neovim
+brew install gcc gh make npm node bat rm-improved neovim jesseduffield/lazygit/lazygit
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"

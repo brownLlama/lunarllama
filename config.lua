@@ -12,4 +12,5 @@ reload("lunarllama.core.which-key")
 
 reload("lunarllama.plugins.mason")
 reload("lunarllama.plugins.null-ls")
+reload("lunarllama.plugins.vim-visual-multi")
 reload("lunarllama.plugins.hop")
