@@ -3,7 +3,8 @@
 mkdir -p .config && cd .config || exit
 mkdir -p lvim
 cd || exit
-mv lunarllama/* .[^.]* .config/lvim/
+mv lunarllama/* .config/lvim/
+mv lunarllama/.git .config/lvim/
 rm -rf lunarllama
 
 sudo apt update
