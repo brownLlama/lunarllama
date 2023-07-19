@@ -1,13 +1,28 @@
 lvim.plugins = {
+	-- Vim Visual Multi
+	{
+		"mg979/vim-visual-multi",
+		branch = "master",
+	},
+
+	-- Hop
 	{
 		"phaazon/hop.nvim",
 		event = "BufRead",
-		branch = "v2", -- optional but strongly recommended
 		config = function()
-			-- you can configure Hop the way you like here; see :h hop-config
-			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+			require("hop").setup()
 			vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
 			vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
 		end,
+	},
+
+	-- Vim Tmux Navigator
+	{
+		"christoomey/vim-tmux-navigator",
+	},
+
+	-- Vim Move
+	{
+		"matze/vim-move",
 	},
 }
