@@ -25,7 +25,7 @@ python3.11 -m pip install --upgrade pip
 echo "export PATH=/home/sanu_maharjan/.local/bin:$PATH" >> ~/.zshrc
 echo 'alias lvim="sudo -E env \"PATH=$PATH\" /home/sanu_maharjan/.local/bin/lvim"' >> ~/.zshrc
 
-echo 'function take {
+echo 'function mdir{
    mkdir -p $1
    cd $1
 }
