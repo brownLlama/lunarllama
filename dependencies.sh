@@ -12,7 +12,7 @@ echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Installing pre-requisits for Neovim
-brew install gcc gh make npm node bat rm-improved neovim jesseduffield/lazygit/lazygit
+brew install gcc gh make npm node bat rm-improved neovim jesseduffield/lazygit/lazygit exa
 # Cargo (Rust)
 curl https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
@@ -32,5 +32,7 @@ echo 'function mdir {
 
 alias c=clear
 alias rm=rip' >> ~/.zshrc
+alias ls='exa --group-directories-first --icons'
+alias l='exa -l -a --group-directories-first --icons'
 
 . ~/.zshrc
