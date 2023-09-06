@@ -7,7 +7,7 @@ mv lunarllama/* .config/lvim/
 mv lunarllama/.git .config/lvim/
 rm -rf lunarllama
 
-sudo apt update
-sudo apt install zsh
-sudo apt-get install build-essential
+sudo apt update -y
+sudo apt install -y zsh
+sudo apt-get install -y build-essential
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
