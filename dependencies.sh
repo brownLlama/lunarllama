@@ -32,7 +32,7 @@ echo 'function mdir {
 
 alias c=clear
 alias rm=rip' >> ~/.zshrc
-alias ls='exa --group-directories-first --icons'
-alias l='exa -l -a --group-directories-first --icons'
+echo "alias ls='exa --group-directories-first --icons'" >> ~/.zshrc
+echo "alias l='exa -l -a --group-directories-first --icons'" >> ~/.zshrc
 
 . ~/.zshrc
